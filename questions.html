@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz-Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <!--Navigation code-->
+        <div class="navbar">
+            <ul>
+                <li>View scores</li>
+                <li id="seconds-counter"></li>
+            </ul>
+        </div>
+        <!--End of Navigation Code-->
+
+        <!--Quiz Questions Start-->
+        <div class="quiz-choices">
+            <!--UL Containing the whole quiz-->
+            <ul class="quiz">
+                <!--First quiz LI start-->
+                <li class="li-head">
+                    <h3>What is the difference between front-end and back-end development?</h3>
+                    <ul class="choices">
+                        <li>
+                            <label>
+                                <input type="radio" name="question0" value="A" />
+                                <span>Back-end development comprises a site's structure, system, data, and logic.</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="question0" value="B" />
+                                <span>Front-end development focuses on the visual aspects of a website — the part that users see and interact with.</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="question0" value="C" />
+                                <span>Together, front-end and back-end development combine to create interactive, visually pleasing websites.</span>
+                            </label
+                            >
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="question0" value="D" />
+                                <span>Back-end developers earn an average of $115,437 per year , front-end developers earn $101,876 per year and full-stack developers make $101,612 per year.</span>
+                            </label>
+                        </li>
+                    </ul>
+                </li>
+                <!--End of LI question one-->
+            </ul>
+        </div>
+        <!--Quiz Questions End-->
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

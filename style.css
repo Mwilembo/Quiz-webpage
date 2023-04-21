@@ -1,0 +1,65 @@
+.navbar ul{
+    list-style-type: none;
+    padding: 0.5rem;
+    background-color: #218380;
+}
+.navbar li{
+    display: inline-flex;
+    padding: 1rem;
+    color: #ffffff;
+}
+
+.notify{
+    border: 3px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.3);
+    margin-left: 19rem;
+    margin-right: 19rem;
+    margin-top: 5rem;
+    padding: 2rem;
+}
+.notify button{
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    background-color: #218380;
+}
+.notify a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+/*Questions Tab*/
+.quiz-choices{
+    border: 3px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.3);
+    margin-left: 19rem;
+    margin-right: 19rem;
+    margin-top: 5rem;
+    padding: 2rem;
+}
+.quiz-choices button{
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    background-color: #218380;
+}
+.quiz-choices a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+.li-head {
+    list-style: none;
+}
+li{
+    list-style: none;
+    margin-left: -2rem;
+}
