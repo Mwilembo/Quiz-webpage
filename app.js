@@ -2,6 +2,10 @@
 let seconds = 600;
 let el = document.getElementById("seconds-counter");
 
+function startQuiz(){
+    window.location.replace("questions.html");
+}
+
 function intervalSeconds(){
     seconds --;
     if(seconds == -1){
@@ -27,15 +31,23 @@ function getCheckedValue(radioName) {
 
 function getScore() {
     let score = 0;
-    for (let i = 0; i < total; i++)
-        if (getCheckedValue("question" + i) === answers[i]) score += 1;
+    for (let i = 0; i < total; i++){
+        if (getCheckedValue("question" + i) === answers[i]){
+            score += 1;
+        }
+    }
     return score;
 }
 
 function returnScore() {
-    document.getElementById("myresults").innerHTML =
-        "Your score is " + getScore() + "/" + total;
+    document.getElementById("myresults").innerHTML = "Your score is " + getScore() + "/" + total;
     if (getScore() > 2) {
-        console.log("Bravo");
+        alert("Bravo!");
+        window.location.replace('index.html');
     }
+    else{
+        alert("Your score is " + getScore() + "/" + total + "\nYou can do better, try Again.");
+        window.location.reload();
+    }
+
 }
